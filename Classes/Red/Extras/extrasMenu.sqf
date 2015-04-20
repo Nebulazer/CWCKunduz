@@ -1,0 +1,10 @@
+removeAllactions player;
+player AddAction ["<t color=""#A9D0F5"">" +"A. GPS ($200)", "Classes\Red\Extras\GPS.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#A9D0F5"">" +"B. Binocular ($50)", "Classes\Red\Extras\binos.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#A9D0F5"">" +"C. Toolkit ($50)", "Classes\Red\Extras\toolkit.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#A9D0F5"">" +"D. Frag Grenade ($100)", "Classes\Red\Extras\grenade.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#A9D0F5"">" +"E. RangeFinder + GPS ($5,000)", "Classes\Red\Extras\Rangefinder.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#A9D0F5"">" +"F. Designator + GPS ($10,000)", "Classes\Red\Extras\Designator.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#2EFE2E"">" +"A+B+C ($250)", "Classes\Red\Extras\getAlla.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#2EFE2E"">" +"A+B+C+D ($300)", "Classes\Red\Extras\getAllb.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
+player AddAction ["<t color=""#000000"">" +"Back", "Classes\menuRed.sqf", "", 0, false, false, "", 'player distance (getPosATL menuRed) < 5'];
