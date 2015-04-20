@@ -4,37 +4,43 @@ if (!isDedicated) then {
 
 	//Level 1 
 	if (p_exp > 0) then {
-	       level = 1;
+	       p_level = 1;
+		   (uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1",level];
 	     
 	};
 
 	//level 2
 	if (p_exp > 1500) then {
-		level = 2;
+		p_level = 2;
+		(uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1",level];
 		
 	};
 
 	//level 3
 	if (p_exp > 3000) then {
-		level = 3;
+		p_level = 3;
+		(uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1",level];
 		
 	};
 
 	//level 4
 	if (p_exp > 6000) then {
-		level = 4;
+		p_level = 4;
+		(uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1",level];
 		
 	};
 	
 	//level 5
 	if (p_exp > 12000) then {
-		level = 5;
+		p_level = 5;
+		(uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1",level];
 		
 	};
 	
 	//level 6
 	if (p_exp > 24000) then {
-		level = 6;
+		p_level = 6;
+		(uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1",level];
 		
 	};
 

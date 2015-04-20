@@ -12,7 +12,7 @@ if (isPlayer _killer)then{
         cash=cash+100;
         hint "$+100";
 		
-(uiNameSpace getVariable "myUI_DollarTitle") ctrlSetText format ["Money: %1",cash];
+(uiNameSpace getVariable "myUI_DollarTitle") ctrlSetText format ["Money: $%1",cash];
     
  _unit removeAllEventHandlers "killed"; 
             };
