@@ -1,4 +1,4 @@
-if (!isDedicated) then {
+if (isPlayer) then {
 
 	//_xp = (p_exp * 2) 
 

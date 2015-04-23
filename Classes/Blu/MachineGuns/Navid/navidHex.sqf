@@ -1,8 +1,7 @@
 //Navid Hex
-//Remove weapons
 _cost=5000;
 
- if (cash >= _cost) 
+ if (cash >= _cost)
 	then {
 	 cash=cash-_cost;
 	 hint "You Bought A Navid Hex For $5,000";

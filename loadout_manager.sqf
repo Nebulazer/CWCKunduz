@@ -206,12 +206,12 @@ switch (_args select 0) do {
 		
 		_loadoutName = 
 			"<img image='"+getText(configFile>>"cfgweapons">>(primaryWeapon _target)>>"picture")+"'/>" +
-			"<img image='"+getText(configFile>>"cfgweapons">>(handgunWeapon _target)>>"picture")+"'/>" +
-			"<img image='"+getText(configFile>>"cfgweapons">>(secondaryWeapon _target)>>"picture")+"'/>" +
-			"<img image='"+getText(configFile>>"cfgweapons">>(headgear _target)>>"picture")+"'/>" +
-			"<img image='"+getText(configFile>>"cfgweapons">>(uniform _target)>>"picture")+"'/>" +
-			"<img image='"+getText(configFile>>"cfgweapons">>(vest _target)>>"picture")+"'/>" +
-			"<img image='"+getText(configFile>>"cfgvehicles">>(backpack _target)>>"picture")+"'/>";	
+		//	"<img image='"+getText(configFile>>"cfgweapons">>(handgunWeapon _target)>>"picture")+"'/>" +
+		//	"<img image='"+getText(configFile>>"cfgweapons">>(secondaryWeapon _target)>>"picture")+"'/>" +
+		//	"<img image='"+getText(configFile>>"cfgweapons">>(headgear _target)>>"picture")+"'/>" +
+		//	"<img image='"+getText(configFile>>"cfgweapons">>(uniform _target)>>"picture")+"'/>" +
+		//	"<img image='"+getText(configFile>>"cfgweapons">>(vest _target)>>"picture")+"'/>" +
+		//	"<img image='"+getText(configFile>>"cfgvehicles">>(backpack _target)>>"picture")+"'/>";	
 	 
 		hintSilent parseText format["<t size='1' color='#ff8822'>Saving loadout</t>"];	 
 		 

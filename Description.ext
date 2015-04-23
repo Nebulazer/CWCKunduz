@@ -9,6 +9,7 @@ enableDebugConsole = 1;
 //{
 //	#include "VAS\cfgfunctions.hpp"
 //};
+    #include "SRS\GUI\SRSdialogs.hpp"
 class RscTitles 
 { 
         class DollarTitle 
@@ -56,6 +57,8 @@ class RscTitles
                             colorBackground[] = {0,0,0,0}; 
                             colorText[] = {1,1,0,1}; 
                             text = ""; 
+							
+		#include "SRS\GUI\SRSprogressBar.hpp"
                         }; 
                 }; 
         }; 
@@ -63,8 +66,13 @@ class RscTitles
 						
 
 
-//REVIVE
-//#include "G_Revive\G_Desc_Include.hpp"
+
+
+    	
+ 
+    class CfgFunctions {
+    	#include "SRS\CfgFunctions.hpp"
+    };
 
 //REARM
 //#include "gvs\colors_include.hpp"

@@ -1,4 +1,4 @@
-//Get Cash when you kill
+//Get Cash and xp when you kill
 if (!isDedicated)then{
 _unit=(_this select 0);
 
@@ -8,9 +8,11 @@ _unit addEventHandler ["killed", {
  
 
 if (isPlayer _killer)then{ 
-
+		
+		p_exp=p_exp+100;
         cash=cash+100;
-        hint "$+100";
+		execVM "Levels.sqf";
+        hint "$+100 and +100XP";
 		
 (uiNameSpace getVariable "myUI_DollarTitle") ctrlSetText format ["Money: $%1",cash];
     
