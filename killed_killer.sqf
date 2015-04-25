@@ -1,4 +1,4 @@
-/Get Cash and xp when you kill
+//Get Cash and xp when you kill
 if (!isDedicated)then{
 _unit=(_this select 0);
 

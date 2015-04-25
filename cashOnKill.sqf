@@ -7,7 +7,7 @@ _unit addEventHandler ["killed", {
  _killer=    (_this select 1); 
  
 
-if (isPlayer _killer)then{ 
+if (player == _killer)then{ 
 		
 		p_exp=p_exp+100;
         cash=cash+100;
