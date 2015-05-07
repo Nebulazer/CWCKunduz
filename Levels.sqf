@@ -1,84 +1,88 @@
+_exp= player getVariable "p_exp";
+_level= player getVariable "p_level";
 switch (true) do 
 { 
-	 case (p_exp >= 140500): 
+	 case (_exp >= 140500): 
     { 
-        p_level = 20; 
+        _level = 20; 
     }; 
-    case (p_exp >= 117100): 
+    case (_exp >= 117100): 
     { 
-        p_level = 19; 
+        _level = 19; 
     }; 
-    case (p_exp >= 97600): 
+    case (_exp >= 97600): 
     { 
-        p_level = 18; 
+        _level = 18; 
     }; 
-    case (p_exp >= 75100): 
+    case (_exp >= 75100): 
     { 
-        p_level = 17; 
+        _level = 17; 
     }; 
-    case (p_exp >= 57800): 
+    case (_exp >= 57800): 
     { 
-        p_level = 16; 
+        _level = 16; 
     }; 
-    case (p_exp >= 44400): 
+    case (_exp >= 44400): 
     { 
-        p_level = 15; 
+        _level = 15; 
     }; 
-    case (p_exp >= 34200): 
+    case (_exp >= 34200): 
     { 
-        p_level = 14; 
+        _level = 14; 
     }; 
-    case (p_exp >= 26300): 
+    case (_exp >= 26300): 
     { 
-        p_level = 13 
+        _level = 13 
     }; 
-    case (p_exp >= 18800): 
+    case (_exp >= 18800): 
     { 
-        p_level = 12; 
+        _level = 12; 
     }; 
-    case (p_exp >= 13500): 
+    case (_exp >= 13500): 
     { 
-        p_level = 11; 
+        _level = 11; 
     };
-    case (p_exp >= 9600): 
+    case (_exp >= 9600): 
     { 
-        p_level = 10; 
+        _level = 10; 
     }; 
-    case (p_exp >= 6900): 
+    case (_exp >= 6900): 
     { 
-        p_level = 9; 
+        _level = 9; 
     }; 
-    case (p_exp >= 4900): 
+    case (_exp >= 4900): 
     { 
-        p_level = 8; 
+        _level = 8; 
     }; 
-    case (p_exp >= 3600): 
+    case (_exp >= 3600): 
     { 
-        p_level = 7; 
+        _level = 7; 
     }; 
-    case (p_exp >= 2600): 
+    case (_exp >= 2600): 
     { 
-        p_level = 6; 
+        _level = 6; 
     }; 
-    case (p_exp >= 1800): 
+    case (_exp >= 1800): 
     { 
-        p_level = 5; 
+        _level = 5; 
     }; 
-    case (p_exp >= 1300): 
+    case (_exp >= 1300): 
     { 
-        p_level = 4; 
+        _level = 4; 
     }; 
-    case (p_exp >= 800): 
+    case (_exp >= 800): 
     { 
-        p_level = 3 
+        _level = 3 
     }; 
-    case (p_exp >= 400): 
+    case (_exp >= 400): 
     { 
-        p_level = 2; 
+        _level = 2; 
     }; 
-    case (p_exp >= 0): 
+    case (_exp >= 0): 
     { 
-        p_level = 1; 
+        _level = 1; 
     }; 
 }; 
-(uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1", p_level];  
+player setVariable ["p_exp",_exp, true];
+player setVariable ["p_level", _level, true];
+(uiNameSpace getVariable "myUI_LevelTitle") ctrlSetText format ["Level: %1", _level];  

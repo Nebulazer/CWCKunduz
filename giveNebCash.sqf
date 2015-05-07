@@ -1,6 +1,8 @@
+_cash = player getVariable "cash";
 
+_newCash=_cash+1000;
+player setVariable ["cash", _newCash, true];
 
-		cash=cash+9000;
-		hint "$+9,000";
+(uiNameSpace getVariable "myUI_DollarTitle") ctrlSetText format ["Money: $%1",_newCash];
 
-(uiNameSpace getVariable "myUI_DollarTitle") ctrlSetText format ["Money: $%1",cash];
+hint "+$1000";

@@ -1,4 +1,7 @@
-		p_exp=p_exp+1000;
-		hint "XP +1000";
+_xp = player getVariable "p_exp";
 
+_newXP=_xp+1000;
+player setVariable ["p_exp", _newXP, true];
+
+hint "+1000XP";
 execVM "Levels.sqf" 
